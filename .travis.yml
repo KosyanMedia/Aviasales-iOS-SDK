@@ -1,14 +1,10 @@
 language: objective-c
-osx_image: xcode10
+osx_image: xcode11.3
 
-rvm: 2.2.2
 before_install:
-    - gem install cocoapods -v '1.5.3'
+    - gem install cocoapods -v '1.9.1'
     - pod setup > /dev/null    #/dev/null to prevent long logs
     - gem install xcpretty
-#    - brew update
-#    - brew outdated xctool || brew upgrade xctool
-#    - git clone https://github.com/facebook/xctool.git #use this if current xctool is outdated
     
 install:
     - pod install --verbose
@@ -21,4 +17,3 @@ xcode_sdk:
     
 script:
    - xcodebuild -workspace AviasalesSDKTemplate.xcworkspace -scheme AviasalesSDKTemplate -sdk iphonesimulator build | xcpretty
-#    - xctool/xctool.sh  -workspace AviasalesSDKTemplate.xcworkspace -scheme AviasalesSDKTemplate -sdk iphonesimulator build test #use this if current xctool is outdated
