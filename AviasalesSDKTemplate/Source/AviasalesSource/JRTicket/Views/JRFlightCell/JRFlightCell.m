@@ -26,7 +26,8 @@
 - (void)downloadAndSetupImageForImageView:(__weak UIImageView *)logo forAirline:(JRSDKAirline *)airline {
     CGFloat scale = [UIScreen mainScreen].scale;
     CGSize size = CGSizeApplyAffineTransform(self.logoIcon.bounds.size, CGAffineTransformMakeScale(scale, scale));
-    NSURL *const url = [NSURL URLWithString:[JRSDKModelUtils airlineLogoUrlWithIATA:airline.iata size:size]];
+    NSString *const urlString = [JRSDKModelUtils airlineLogoUrlWithIATA:airline.iata size:size isDark:NO gravity:JRAirlineLogoGravityNoGravity];
+    NSURL *const url = [NSURL URLWithString:urlString];
     
     logo.image = nil;
     logo.highlightedImage = nil;

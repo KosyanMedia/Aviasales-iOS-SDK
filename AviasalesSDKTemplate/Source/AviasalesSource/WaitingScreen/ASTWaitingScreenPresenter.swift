@@ -57,7 +57,6 @@ class ASTWaitingScreenPresenter: NSObject {
         view.startAnimating()
         view.updateInfo(text: NSLS("JR_WAITING_TITLE"), range: NSRange())
         performSearch()
-        AviasalesAdManager.shared.loadAdView(for: searchInfo)
         PriceCalendarManager.shared.prepareLoader(with: searchInfo)
     }
 
@@ -84,7 +83,7 @@ private extension ASTWaitingScreenPresenter {
     func performSearch() {
         AviasalesSDK.sharedInstance().updateCurrencyCode(CurrencyManager.shared.currency.code.lowercased())
         searchPerformer.delegate = self
-        searchPerformer.performSearch(with: searchInfo, includeResultsInEnglish: true)
+        searchPerformer.performSearch(with: searchInfo)
     }
 
     func handle(_ temporaryResult: JRSDKSearchResult) {
@@ -184,7 +183,7 @@ extension ASTWaitingScreenPresenter: JRSDKSearchPerformerDelegate {
         }
     }
 
-    func searchPerformer(_ searchPerformer: JRSDKSearchPerformer!, didFinishRegularSearch searchInfo: JRSDKSearchInfo!, with result: JRSDKSearchResult!, andMetropolitanResult metropolitanResult: JRSDKSearchResult!) {
+    func searchPerformer(_ searchPerformer: JRSDKSearchPerformer!, didFinishSearch searchInfo: JRSDKSearchInfo!, with result: JRSDKSearchResult!, andMetropolitanResult metropolitanResult: JRSDKSearchResult!) {
 
         guard  let result = result, let metropolitanResult = metropolitanResult else {
             return

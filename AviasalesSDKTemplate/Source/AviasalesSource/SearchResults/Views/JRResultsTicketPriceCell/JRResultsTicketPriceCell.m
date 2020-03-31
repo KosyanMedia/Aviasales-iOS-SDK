@@ -55,7 +55,7 @@ static const CGSize kAirlineLogoSize = (CGSize){85, 25};
 
 - (void)setAirline:(JRSDKAirline *)airline {
     _airline = airline;
-    self.airlineLogoURL = [NSURL URLWithString:[JRSDKModelUtils airlineLogoUrlWithIATA:airline.iata size:self.airlineLogoSize]];
+    self.airlineLogoURL = [NSURL URLWithString:[JRSDKModelUtils airlineLogoUrlWithIATA:airline.iata size:self.airlineLogoSize isDark:NO gravity:JRAirlineLogoGravityNoGravity]];
 }
 
 - (void)setAirlineLogoURL:(NSURL *)airlineLogoURL {

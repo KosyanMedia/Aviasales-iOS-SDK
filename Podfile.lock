@@ -1,46 +1,46 @@
 PODS:
   - Alamofire (4.8.2)
-  - Appodeal/AdColonyAdapter (2.4.10):
+  - Appodeal/AdColonyAdapter (2.4.4.3-Beta):
     - Appodeal/AdExchangeAdapter
     - Appodeal/Core
-  - Appodeal/AdExchangeAdapter (2.4.10):
+  - Appodeal/AdExchangeAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/AmazonAdsAdapter (2.4.10):
+  - Appodeal/AmazonAdsAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/AppLovinAdapter (2.4.10):
+  - Appodeal/AppLovinAdapter (2.4.4.3-Beta):
     - Appodeal/AdExchangeAdapter
     - Appodeal/Core
-  - Appodeal/ChartboostAdapter (2.4.10):
+  - Appodeal/ChartboostAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/Core (2.4.10)
-  - Appodeal/FacebookAudienceAdapter (2.4.10):
+  - Appodeal/Core (2.4.4.3-Beta)
+  - Appodeal/FacebookAudienceAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/GoogleAdMobAdapter (2.4.10):
+  - Appodeal/GoogleAdMobAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/InMobiAdapter (2.4.10):
+  - Appodeal/InMobiAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/Interstitial (2.4.10):
+  - Appodeal/Interstitial (2.4.4.3-Beta):
     - Appodeal/AmazonAdsAdapter
     - Appodeal/FacebookAudienceAdapter
     - Appodeal/GoogleAdMobAdapter
     - Appodeal/InMobiAdapter
     - Appodeal/Video
     - Appodeal/YandexAdapter
-  - Appodeal/IronSource (2.4.10):
+  - Appodeal/IronSource (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/MobvistaAdapter (2.4.10):
+  - Appodeal/MobvistaAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/MyTargetAdapter (2.4.10):
+  - Appodeal/MyTargetAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/StartAppAdapter (2.4.10):
+  - Appodeal/StartAppAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/TapjoyAdapter (2.4.10):
+  - Appodeal/TapjoyAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/TwitterMoPubAdapter (2.4.10):
+  - Appodeal/TwitterMoPubAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/UnityAdapter (2.4.10):
+  - Appodeal/UnityAdapter (2.4.4.3-Beta):
     - Appodeal/Core
-  - Appodeal/Video (2.4.10):
+  - Appodeal/Video (2.4.4.3-Beta):
     - Appodeal/AdColonyAdapter
     - Appodeal/AdExchangeAdapter
     - Appodeal/AppLovinAdapter
@@ -54,13 +54,13 @@ PODS:
     - Appodeal/TwitterMoPubAdapter
     - Appodeal/UnityAdapter
     - Appodeal/VungleAdapter
-  - Appodeal/VungleAdapter (2.4.10):
+  - Appodeal/VungleAdapter (2.4.4.3-Beta):
     - Appodeal/AdExchangeAdapter
     - Appodeal/Core
-  - Appodeal/YandexAdapter (2.4.10):
+  - Appodeal/YandexAdapter (2.4.4.3-Beta):
     - Appodeal/Core
   - AutoCoding (2.2.3)
-  - AviasalesSDK (3.1.3)
+  - AviasalesSDK (4.0.1)
   - AXRatingView (1.0.6)
   - BZipCompression (1.0.2)
   - Crashlytics (3.12.0):
@@ -174,9 +174,9 @@ PODS:
   - SwiftProtobuf (1.0.3)
 
 DEPENDENCIES:
-  - Appodeal/Interstitial
+  - Appodeal/Interstitial (= 2.4.4.3-Beta)
   - AutoCoding (~> 2.2)
-  - AviasalesSDK (~> 3.1.3)
+  - AviasalesSDK (~> 4.0.1)
   - AXRatingView
   - BZipCompression
   - Crashlytics
@@ -191,7 +191,7 @@ DEPENDENCIES:
   - Smartling.i18n (~> 1.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Appodeal
     - AutoCoding
@@ -219,9 +219,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Appodeal: 7c655d91a5e200a73140e9be90f57a6a9a893cc8
+  Appodeal: d0341ef1d2058138f7f76a6a64c17eac367908ba
   AutoCoding: 90ca3cbc0d77a37cfff75167d705b44148c5fc51
-  AviasalesSDK: bb37015cbc748dad36b8d444527595cbe9970c3a
+  AviasalesSDK: 1598c71b1e8dfc9af7766c7f4582282efa0eed0d
   AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
   BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
@@ -243,6 +243,6 @@ SPEC CHECKSUMS:
   Smartling.i18n: 0d508b89a2a12f0e070e6369e4dcdcf46ae2d59f
   SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
 
-PODFILE CHECKSUM: a84768a8db21799578943b25c744ba0721751d74
+PODFILE CHECKSUM: d3264482480989acbbc088e2d76b3166e87b59ba
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.1

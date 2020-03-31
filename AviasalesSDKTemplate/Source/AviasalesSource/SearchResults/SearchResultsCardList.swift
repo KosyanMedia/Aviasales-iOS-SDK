@@ -67,10 +67,6 @@ private extension SearchResultsCardList {
 
     func buildItems() {
 
-        if let aviasalesAdItem = buildAviasalesAdItem() {
-            items.append(aviasalesAdItem)
-        }
-
         if let priceCalendarItem = buildPriceCalendarItem() {
             items.append(priceCalendarItem)
         }
@@ -78,14 +74,6 @@ private extension SearchResultsCardList {
         if let hotellookCardItem = buildHotellookCardItem() {
             items.append(hotellookCardItem)
         }
-    }
-
-    func buildAviasalesAdItem() -> SearchResultsCardItem? {
-        guard let aviasalesAdView = AviasalesAdManager.shared.cachedAdView, let adContainerView = AdContainerView.loadFromNib() else {
-            return nil
-        }
-        aviasalesAdView.place(into: adContainerView.containerView)
-        return SearchResultsCardItem(index: aviasalesAdIndex, view: adContainerView, height: 130)
     }
 
     func buildPriceCalendarItem() -> SearchResultsCardItem? {

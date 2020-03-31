@@ -216,4 +216,7 @@ extension ASAirportPickerPresenter: AviasalesSearchPerformerDelegate {
         searching = !final
         view?.set(sectionModels: buildSearchSectionModels(from: locations))
     }
+
+    func airportsSearchPerformer(_ airportsSearchPerformer: AviasalesAirportsSearchPerformer!, didFailSearchingWithError error: Error!) {
+    }
 }

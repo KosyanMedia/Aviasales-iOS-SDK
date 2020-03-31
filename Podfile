@@ -1,5 +1,5 @@
 
-platform :ios, :deployment_target => '9.0'
+platform :ios, :deployment_target => '10.0'
 use_frameworks!
 
 source 'https://github.com/CocoaPods/Specs.git'
@@ -7,7 +7,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 def shared
 
-    pod 'AviasalesSDK', '~> 3.1.3'
+    pod 'AviasalesSDK', '~> 4.0.1'
     pod 'HotellookSDK', '~> 1.0.8'
     pod 'Firebase/Core'
     pod 'Fabric'
