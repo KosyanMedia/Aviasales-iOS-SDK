@@ -1,0 +1,3 @@
+files:
+  - source: Resources/en.lproj/
+    translation: Resources/%two_letters_code%.lproj
